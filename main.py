@@ -47,13 +47,13 @@ def fire_bullet(x,y):
     global bullet_state
     bullet_state = "fire"
     screen.blit(bullet, (x-5, y+10))
-"""
+
 def vision (self):
     pos = pygame.mouse.get_pos()
     self.rect.midtop = pos
     if self.punching:
         self.rect.move_ip(5, 10)
-"""
+
 def isCollision(enemyx, enemyy, bulletx, bullety) :
     distance = math.sqrt((math.pow(enemyx - bulletx,2)) + (math.pow(enemyy - bullety,2)))
     if distance < 20:
